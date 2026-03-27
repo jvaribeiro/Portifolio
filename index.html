@@ -15,6 +15,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Devicon Icons (para os ícones de linguagens) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -117,48 +119,156 @@
         </section>
 
         <!-- SEÇÃO HABILIDADES -->
-        <section id="skills" class="py-20 bg-gray-900">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-white mb-12">Habilidades Técnicas</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
-                    <!-- Categoria -->
-                    <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="text-xl font-bold text-white mb-4">Front-End</h3>
-                        <ul class="space-y-2 text-gray-400">
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>Bootstrap</li>
+        <section id="skills" class="py-24 relative bg-[#0f172a] overflow-hidden border-y border-gray-800/50">
+            <div class="container mx-auto px-6 relative z-10 block">
+                <h2 class="text-4xl font-extrabold text-center text-white mb-16 tracking-tight">Habilidades Técnicas
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+
+                    <!-- Front-End (Maior Destaque) -->
+                    <div
+                        class="lg:col-span-2 lg:row-span-2 flex flex-col bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-500 shadow-2xl hover:shadow-sky-500/10 group">
+                        <div class="flex items-center gap-4 mb-8">
+                            <h3 class="text-2xl font-bold text-white">Front-End</h3>
+                        </div>
+                        <p class="text-gray-400 mb-8 max-w-sm group-hover:text-gray-200 transition-colors">Aprimorando e
+                            criando interfaces responsivas, dinâmicas, acessíveis e de alta performance para a web.</p>
+                        <div class="grid grid-cols-3 gap-y-8 mt-auto">
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-html5-plain colored text-5xl"></i>
+                                <span
+                                    class="text-sm text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">HTML5</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-css3-plain colored text-5xl"></i>
+                                <span
+                                    class="text-sm text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">CSS3</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-javascript-plain colored text-5xl"></i>
+                                <span
+                                    class="text-sm text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">JavaScript</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-react-original colored text-5xl"></i>
+                                <span
+                                    class="text-sm text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">React</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-bootstrap-plain colored text-5xl"></i>
+                                <span
+                                    class="text-sm text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">Bootstrap</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-tailwindcss-original colored text-5xl"></i>
+                                <span
+                                    class="text-sm text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Back-End -->
+                    <div
+                        class="lg:col-span-2 lg:row-span-1 flex flex-col bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-500 shadow-2xl hover:shadow-orange-500/10 group">
+                        <div class="flex items-center gap-4 mb-8">
+                            <h3 class="text-2xl font-bold text-white">Back-End</h3>
+                        </div>
+                        <div class="flex flex-wrap justify-between gap-6 mt-auto">
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-java-plain colored text-5xl"></i>
+                                <span
+                                    class="text-sm text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">Java</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-spring-original colored text-5xl"></i>
+                                <span
+                                    class="text-sm text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">SpringBoot</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-php-plain colored text-5xl"></i>
+                                <span
+                                    class="text-sm text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">PHP</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-laravel-original colored text-5xl"></i>
+                                <span
+                                    class="text-sm text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">Laravel</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-c-plain colored text-5xl"></i>
+                                <span
+                                    class="text-sm text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">C</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bancos de Dados -->
+                    <div
+                        class="lg:col-span-1 lg:row-span-1 flex flex-col bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-500 shadow-2xl hover:shadow-blue-500/10 group">
+                        <div class="flex gap-4 mb-6 items-center">
+                            <h3 class="text-xl font-bold text-white">Bancos de Dados</h3>
+                        </div>
+                        <div class="flex justify-around mt-auto">
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-postgresql-plain colored text-5xl"></i>
+                                <span
+                                    class="text-sm text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">PostgreSQL</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-mysql-plain colored text-5xl"></i>
+                                <span
+                                    class="text-sm text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ferramentas e Mais -->
+                    <div
+                        class="lg:col-span-1 lg:row-span-1 flex flex-col bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-500 shadow-2xl hover:shadow-purple-500/10 group">
+                        <div class="flex gap-4 mb-6 items-center">
+                            <h3 class="text-xl font-bold text-white">Ferramentas & Ágil</h3>
+                        </div>
+                        <div class="flex justify-center gap-6 mb-6">
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-git-plain colored text-4xl"></i>
+                                <span
+                                    class="text-xs text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">Git</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
+                                <i class="devicon-github-original text-white text-4xl"></i>
+                                <span
+                                    class="text-xs text-gray-400 font-medium group-hover/item:text-white transition-colors duration-300">GitHub</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-2.5 text-sm text-gray-400 mt-auto font-medium">
+                            <li class="flex items-center gap-3 hover:translate-x-1 transition-transform cursor-pointer">
+                                <div class="w-1.5 h-1.5 rounded-full bg-sky-400"></div> Metodologias Ágeis
+                            </li>
+                            <li class="flex items-center gap-3 hover:translate-x-1 transition-transform cursor-pointer">
+                                <div class="w-1.5 h-1.5 rounded-full bg-purple-400"></div> Manutenção Hardware
+                            </li>
+                            <li class="flex items-center gap-3 hover:translate-x-1 transition-transform cursor-pointer">
+                                <div class="w-1.5 h-1.5 rounded-full bg-green-400"></div> Resolução de Problemas
+                            </li>
                         </ul>
                     </div>
-                    <!-- Categoria -->
-                    <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="text-xl font-bold text-white mb-4">Back-End</h3>
-                        <ul class="space-y-2 text-gray-400">
-                            <li>Java & SpringBoot</li>
-                            <li>PHP & Laravel</li>
-                            <li>C</li>
-                        </ul>
-                    </div>
-                    <!-- Categoria -->
-                    <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="text-xl font-bold text-white mb-4">Bancos de Dados</h3>
-                        <ul class="space-y-2 text-gray-400">
-                            <li>SQL</li>
-                            <li>PostgreSQL</li>
-                        </ul>
-                    </div>
-                    <!-- Categoria -->
-                    <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="text-xl font-bold text-white mb-4">Ferramentas e Mais</h3>
-                        <ul class="space-y-2 text-gray-400">
-                            <li>Git & GitHub</li>
-                            <li>Metodologias Ágeis</li>
-                            <li>Manutenção de Hardware</li>
-                            <li>Resolução de Problemas</li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
         </section>

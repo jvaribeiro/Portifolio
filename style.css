@@ -51,3 +51,28 @@ body {
     background-position: 0% 50%;
   }
 }
+
+/* Animação de fundo sutil na seção de habilidades */
+@keyframes skill-blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(15px, -15px) scale(1.03); }
+}
+
+@keyframes skill-blob-reverse {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-15px, 15px) scale(1.03); }
+}
+
+.animate-skill-blob {
+  animation: skill-blob 18s ease-in-out infinite;
+}
+
+.animate-skill-blob-reverse {
+  animation: skill-blob-reverse 20s ease-in-out infinite;
+}
+
+/* Texto dos cards de habilidades em branco para maior contraste */
+#skills .text-gray-400 {
+  color: #ffffff !important;
+}
+
