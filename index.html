@@ -5,8 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>João Vitor A. Ribeiro | Desenvolvedor de Software</title>
+    <meta name="description" content="Portfólio de João Vitor Alexandre Ribeiro, desenvolvedor de software.">
+    <meta name="keywords" content="desenvolvedor, software, front-end, back-end, react, java, springboot, portfólio, joão vitor">
+    <meta name="author" content="João Vitor Alexandre Ribeiro">
+    <meta name="robots" content="index, follow">
     <link rel="icon" href="asset/favicon-joao-vitor.svg" type="image/svg+xml">
     <meta name="description" content="Portfólio de João Vitor Alexandre Ribeiro, desenvolvedor de software.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joaovitoralexandreribeiro.vercel.app/">
+    <meta property="og:title" content="João Vitor A. Ribeiro | Desenvolvedor de Software">
+    <meta property="og:description" content="Portfólio de João Vitor Alexandre Ribeiro, desenvolvedor de software.">
+    <meta property="og:image" content="asset/logo-principal.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://joaovitoralexandreribeiro.vercel.app/">
+    <meta property="twitter:title" content="João Vitor A. Ribeiro | Desenvolvedor de Software">
+    <meta property="twitter:description" content="Portfólio de João Vitor Alexandre Ribeiro, desenvolvedor de software.">
+    <meta property="twitter:image" content="asset/logo-principal.svg">
 
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,61 +42,65 @@
 
 <body class="antialiased">
 
+    <!-- Skip Links para acessibilidade -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-sky-500 text-white px-4 py-2 rounded z-50">Pular para conteúdo principal</a>
+    <a href="#navigation" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-32 bg-sky-500 text-white px-4 py-2 rounded z-50">Pular para navegação</a>
+
     <!-- CABEÇALHO E NAVEGAÇÃO -->
-    <header id="header" class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+    <header id="header" class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50" role="banner">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="https://joaovitoralexandreribeiro.vercel.app/" class="text-xl font-bold text-white"><img
-                    src="asset/logo-principal.svg" alt="Logo João Vitor Ribeiro" class="h-10"></a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#about" class="hover:text-sky-400 transition-colors duration-300">Sobre</a>
-                <a href="#skills" class="hover:text-sky-400 transition-colors duration-300">Habilidades</a>
-                <a href="#experience" class="hover:text-sky-400 transition-colors duration-300">Experiência</a>
-                <a href="#education" class="hover:text-sky-400 transition-colors duration-300">Formação</a>
-                <a href="#projects" class="hover:text-sky-400 transition-colors duration-300">Projetos</a>
-                <a href="#contact" class="hover:text-sky-400 transition-colors duration-300">Contato</a>
+            <a href="https://joaovitoralexandreribeiro.vercel.app/" class="text-xl font-bold text-white" aria-label="Página inicial de João Vitor Ribeiro">
+                <img src="asset/logo-principal.svg" alt="Logo João Vitor Ribeiro" class="h-10">
+            </a>
+            <nav id="navigation" role="navigation" aria-label="Navegação principal">
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#home" class="hover:text-sky-400 transition-colors duration-300">Início</a></li>
+                    <li><a href="#about" class="hover:text-sky-400 transition-colors duration-300">Sobre</a></li>
+                    <li><a href="#skills" class="hover:text-sky-400 transition-colors duration-300">Habilidades</a></li>
+                    <li><a href="#experience" class="hover:text-sky-400 transition-colors duration-300">Experiência</a></li>
+                    <li><a href="#education" class="hover:text-sky-400 transition-colors duration-300">Formação</a></li>
+                    <li><a href="#projects" class="hover:text-sky-400 transition-colors duration-300">Projetos</a></li>
+                    <li><a href="#contact" class="hover:text-sky-400 transition-colors duration-300">Contato</a></li>
+                </ul>
             </nav>
-            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
-                    </path>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu de navegação">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
         </div>
         <!-- Menu Mobile -->
-        <div id="mobile-menu" class="hidden md:hidden">
-            <a href="#about" class="block py-2 px-6 text-sm hover:bg-gray-800">Sobre</a>
-            <a href="#skills" class="block py-2 px-6 text-sm hover:bg-gray-800">Habilidades</a>
-            <a href="#experience" class="block py-2 px-6 text-sm hover:bg-gray-800">Experiência</a>
-            <a href="#education" class="block py-2 px-6 text-sm hover:bg-gray-800">Formação</a>
-            <a href="#projects" class="block py-2 px-6 text-sm hover:bg-gray-800">Projetos</a>
-            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-800">Contato</a>
-        </div>
+        <nav id="mobile-menu" class="hidden md:hidden" role="navigation" aria-label="Menu móvel">
+            <ul>
+                <li><a href="#home" class="block py-2 px-6 text-sm hover:bg-gray-800">Início</a></li>
+                <li><a href="#about" class="block py-2 px-6 text-sm hover:bg-gray-800">Sobre</a></li>
+                <li><a href="#skills" class="block py-2 px-6 text-sm hover:bg-gray-800">Habilidades</a></li>
+                <li><a href="#experience" class="block py-2 px-6 text-sm hover:bg-gray-800">Experiência</a></li>
+                <li><a href="#education" class="block py-2 px-6 text-sm hover:bg-gray-800">Formação</a></li>
+                <li><a href="#projects" class="block py-2 px-6 text-sm hover:bg-gray-800">Projetos</a></li>
+                <li><a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-800">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
 
         <!-- SEÇÃO INICIAL  -->
-        <section id="home" class="min-h-screen flex items-center">
+        <section id="home" class="min-h-screen flex items-center" aria-labelledby="hero-title">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+                <h1 id="hero-title" class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
                     Olá, eu sou <span class="highlight">João Vitor</span>.
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto">
                     Desenvolvedor de Software.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="#projects"
-                        class="bg-sky-500 text-white font-bold py-3 px-8 rounded-full hover:bg-sky-600 transition-transform duration-300 transform hover:scale-105 w-full sm:w-auto">
+                    <a href="#projects" class="bg-sky-500 text-white font-bold py-3 px-8 rounded-full hover:bg-sky-600 transition-transform duration-300 transform hover:scale-105 w-full sm:w-auto" aria-label="Ver projetos de João Vitor">
                         Ver Projetos
                     </a>
-                    <a href="asset/JOAO-VITOR-ALEXANDRE-RIBEIRO-CURRICULO.pdf"
-                        download="JOAO-VITOR-ALEXANDRE-RIBEIRO-CURRICULO.pdf"
-                        class="bg-gray-700 text-white font-bold py-3 px-8 rounded-full hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2 w-full sm:w-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                                clip-rule="evenodd" />
+                    <a href="asset/JOAO-VITOR-ALEXANDRE-RIBEIRO-CURRICULO.pdf" download="JOAO-VITOR-ALEXANDRE-RIBEIRO-CURRICULO.pdf" class="bg-gray-700 text-white font-bold py-3 px-8 rounded-full hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2 w-full sm:w-auto" aria-label="Baixar currículo de João Vitor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
                         Baixar CV
                     </a>
@@ -87,18 +109,19 @@
         </section>
 
         <!-- SEÇÃO SOBRE MIM (COM FOTO) -->
-        <section id="about" class="py-20 bg-gray-800">
+        <section id="about" class="py-20 bg-gray-800" aria-labelledby="about-title">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-white mb-12">Sobre Mim</h2>
+                <h2 id="about-title" class="text-3xl font-bold text-center text-white mb-12">Sobre Mim</h2>
                 <div class="flex flex-col md:flex-row items-center justify-center gap-12 max-w-5xl mx-auto">
                     <!-- Coluna da Imagem -->
                     <div class="w-full md:w-1/3 flex-shrink-0">
-                        <img src="/asset/foto-sem-fundo.png" alt="Foto de João Vitor A. Ribeiro"
-                            class="rounded-lg w-full h-auto object-cover">
+                        <figure>
+                            <img src="/asset/foto-sem-fundo.png" alt="Foto de João Vitor A. Ribeiro" class="rounded-lg w-full h-auto object-cover">
+                            <figcaption class="sr-only">João Vitor Alexandre Ribeiro, desenvolvedor de software</figcaption>
+                        </figure>
                     </div>
                     <!-- Coluna do Texto -->
                     <div class="w-full md:w-2/3 text-gray-300 leading-relaxed text-center md:text-left">
-                        <p class="mb-4">
                             Minha jornada na tecnologia começou no curso de Análise e Desenvolvimento de Sistemas do
                             IFRN, onde descobri minha paixão por programação. Desde então, venho aprofundando meus
                             conhecimentos em tecnologias Front-End, como React, e Back-End com Java e SpringBoot.
@@ -119,10 +142,9 @@
         </section>
 
         <!-- SEÇÃO HABILIDADES -->
-        <section id="skills" class="py-24 relative bg-[#0f172a] overflow-hidden border-y border-gray-800/50">
+        <section id="skills" class="py-24 relative bg-[#0f172a] overflow-hidden border-y border-gray-800/50" aria-labelledby="skills-title">
             <div class="container mx-auto px-6 relative z-10 block">
-                <h2 class="text-4xl font-extrabold text-center text-white mb-16 tracking-tight">Habilidades Técnicas
-                </h2>
+                <h2 id="skills-title" class="text-4xl font-extrabold text-center text-white mb-16 tracking-tight">Habilidades Técnicas</h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
 
@@ -274,92 +296,84 @@
         </section>
 
         <!-- SEÇÃO EXPERIÊNCIA -->
-        <section id="experience" class="py-20 bg-gray-800">
+        <section id="experience" class="py-20 bg-gray-800" aria-labelledby="experience-title">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-white mb-12">Minha Jornada</h2>
+                <h2 id="experience-title" class="text-3xl font-bold text-center text-white mb-12">Minha Jornada</h2>
                 <!-- Container da Timeline -->
-                <div class="relative max-w-5xl mx-auto">
+                <div class="relative max-w-5xl mx-auto" role="list" aria-label="Experiências profissionais">
                     <!-- Linha da timeline (agora à esquerda em mobile, e no centro em telas maiores) -->
-                    <div class="absolute left-0 md:left-1/2 w-0.5 h-full bg-gray-700 transform md:-translate-x-1/2">
+                    <div class="absolute left-0 md:left-1/2 w-0.5 h-full bg-gray-700 transform md:-translate-x-1/2" aria-hidden="true">
                     </div>
 
                     <!-- Item da Timeline 1 -->
-                    <div class="relative pl-8 md:pl-0 mb-12">
+                    <article class="relative pl-8 md:pl-0 mb-12" role="listitem">
                         <!-- Ponto na linha -->
-                        <div
-                            class="absolute w-4 h-4 bg-sky-400 rounded-full mt-1.5 left-0 md:left-1/2 transform md:-translate-x-1/2">
+                        <div class="absolute w-4 h-4 bg-sky-400 rounded-full mt-1.5 left-0 md:left-1/2 transform md:-translate-x-1/2" aria-hidden="true">
                         </div>
                         <!-- Conteúdo (agora à direita em telas maiores) -->
                         <div class="md:ml-[calc(50%+2rem)] md:pl-8">
                             <h3 class="text-lg font-bold text-white">Técnico de suporte de informática (Autônomo)</h3>
-                            <p class="text-sm text-gray-400 mb-2">Fev/2024 – Mai/2025</p>
-                            <p class="text-gray-300">Otimização de sistemas, diagnóstico e resolução de problemas de
-                                hardware/software.</p>
+                            <time datetime="2024-02" class="text-sm text-gray-400 mb-2 block">Fev/2024 – Mai/2025</time>
+                            <p class="text-gray-300">Otimização de sistemas, diagnóstico e resolução de problemas de hardware/software.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Item da Timeline 2 -->
-                    <div class="relative pl-8 md:pl-0 mb-12">
+                    <article class="relative pl-8 md:pl-0 mb-12" role="listitem">
                         <!-- Ponto na linha -->
-                        <div
-                            class="absolute w-4 h-4 bg-sky-400 rounded-full mt-1.5 left-0 md:left-1/2 transform md:-translate-x-1/2">
+                        <div class="absolute w-4 h-4 bg-sky-400 rounded-full mt-1.5 left-0 md:left-1/2 transform md:-translate-x-1/2" aria-hidden="true">
                         </div>
                         <!-- Conteúdo (agora à esquerda em telas maiores) -->
                         <div class="md:mr-[calc(50%+2rem)] md:pr-8 md:text-right">
                             <h3 class="text-lg font-bold text-white">Estágio no SEBRAE/RN</h3>
-                            <p class="text-sm text-gray-400 mb-2">Jul/2021 – Abr/2023</p>
-                            <p class="text-gray-300">Atendimento, orientação empresarial, gerenciamento de dados e
-                                realização de processos para MEIs.</p>
+                            <time datetime="2021-07" class="text-sm text-gray-400 mb-2 block">Jul/2021 – Abr/2023</time>
+                            <p class="text-gray-300">Atendimento, orientação empresarial, gerenciamento de dados e realização de processos para MEIs.</p>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Item da Timeline 3 -->
-                    <div class="relative pl-8 md:pl-0">
+                    <article class="relative pl-8 md:pl-0" role="listitem">
                         <!-- Ponto na linha -->
-                        <div
-                            class="absolute w-4 h-4 bg-sky-400 rounded-full mt-1.5 left-0 md:left-1/2 transform md:-translate-x-1/2">
+                        <div class="absolute w-4 h-4 bg-sky-400 rounded-full mt-1.5 left-0 md:left-1/2 transform md:-translate-x-1/2" aria-hidden="true">
                         </div>
                         <!-- Conteúdo (agora à direita em telas maiores) -->
                         <div class="md:ml-[calc(50%+2rem)] md:pl-8">
                             <h3 class="text-lg font-bold text-white">Bolsista PIBID na UEPB</h3>
-                            <p class="text-sm text-gray-400 mb-2">2018 – 2019</p>
-                            <p class="text-gray-300">Desenvolvimento de habilidades de comunicação e aplicação de planos
-                                de aula e metodologias inovadoras.</p>
+                            <time datetime="2018" class="text-sm text-gray-400 mb-2 block">2018 – 2019</time>
+                            <p class="text-gray-300">Desenvolvimento de habilidades de comunicação e aplicação de planos de aula e metodologias inovadoras.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- SEÇÃO FORMAÇÃO -->
-        <section id="education" class="py-20 bg-gray-900">
+        <section id="education" class="py-20 bg-gray-900" aria-labelledby="education-title">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-white mb-12">Formação e Cursos</h2>
+                <h2 id="education-title" class="text-3xl font-bold text-center text-white mb-12">Formação e Cursos</h2>
                 <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
                     <!-- Coluna Formação Acadêmica -->
                     <div>
                         <h3 class="text-2xl font-bold text-white mb-6">Formação Acadêmica</h3>
                         <div class="space-y-6">
                             <!-- Item -->
-                            <div class="bg-gray-800 p-6 rounded-lg">
-                                <p class="text-sm text-sky-400 font-semibold">2020 - 2025</p>
-                                <h4 class="text-lg font-bold text-white mt-1">Tecnologia em Análise e Desenvolvimento de
-                                    Sistemas (Concluído)</h4>
-                                <p class="text-gray-400">Instituto Federal de Educação, Ciência e Tecnologia do RN
-                                    (IFRN)</p>
-                            </div>
+                            <article class="bg-gray-800 p-6 rounded-lg">
+                                <time datetime="2020/2025" class="text-sm text-sky-400 font-semibold block">2020 - 2025</time>
+                                <h4 class="text-lg font-bold text-white mt-1">Tecnologia em Análise e Desenvolvimento de Sistemas (Concluído)</h4>
+                                <p class="text-gray-400">Instituto Federal de Educação, Ciência e Tecnologia do RN (IFRN)</p>
+                            </article>
                             <!-- Item -->
-                            <div class="bg-gray-800 p-6 rounded-lg">
-                                <p class="text-sm text-sky-400 font-semibold">2017 - 2019</p>
+                            <article class="bg-gray-800 p-6 rounded-lg">
+                                <time datetime="2017/2019" class="text-sm text-sky-400 font-semibold block">2017 - 2019</time>
                                 <h4 class="text-lg font-bold text-white mt-1">Licenciatura em Física (Interrompido)</h4>
                                 <p class="text-gray-400">Universidade Estadual da Paraíba (UEPB)</p>
-                            </div>
+                            </article>
                             <!-- Item -->
-                            <div class="bg-gray-800 p-6 rounded-lg">
-                                <p class="text-sm text-sky-400 font-semibold">Concluído em 2015</p>
+                            <article class="bg-gray-800 p-6 rounded-lg">
+                                <time datetime="2015" class="text-sm text-sky-400 font-semibold block">Concluído em 2015</time>
                                 <h4 class="text-lg font-bold text-white mt-1">Ensino Médio</h4>
                                 <p class="text-gray-400">Escola Estadual Rosa Pignataro</p>
-                            </div>
+                            </article>
                         </div>
                     </div>
                     <!-- Coluna Cursos Complementares -->
@@ -367,25 +381,21 @@
                         <h3 class="text-2xl font-bold text-white mb-6">Cursos Complementares</h3>
                         <div class="space-y-4">
                             <!-- Item -->
-                            <div class="bg-gray-800 p-4 rounded-lg">
-                                <h4 class="font-semibold text-white">Programador Web <span
-                                        class="text-sm text-gray-400 font-normal">(210h)</span></h4>
-                            </div>
+                            <article class="bg-gray-800 p-4 rounded-lg">
+                                <h4 class="font-semibold text-white">Programador Web <span class="text-sm text-gray-400 font-normal">(210h)</span></h4>
+                            </article>
                             <!-- Item -->
-                            <div class="bg-gray-800 p-4 rounded-lg">
-                                <h4 class="font-semibold text-white">Sistemas Embarcados <span
-                                        class="text-sm text-gray-400 font-normal">(160h)</span></h4>
-                            </div>
+                            <article class="bg-gray-800 p-4 rounded-lg">
+                                <h4 class="font-semibold text-white">Sistemas Embarcados <span class="text-sm text-gray-400 font-normal">(160h)</span></h4>
+                            </article>
                             <!-- Item -->
-                            <div class="bg-gray-800 p-4 rounded-lg">
-                                <h4 class="font-semibold text-white">Operador de Computadores <span
-                                        class="text-sm text-gray-400 font-normal">(160h)</span></h4>
-                            </div>
+                            <article class="bg-gray-800 p-4 rounded-lg">
+                                <h4 class="font-semibold text-white">Operador de Computadores <span class="text-sm text-gray-400 font-normal">(160h)</span></h4>
+                            </article>
                             <!-- Item -->
-                            <div class="bg-gray-800 p-4 rounded-lg">
-                                <h4 class="font-semibold text-white">Informática Básica <span
-                                        class="text-sm text-gray-400 font-normal">(40h)</span></h4>
-                            </div>
+                            <article class="bg-gray-800 p-4 rounded-lg">
+                                <h4 class="font-semibold text-white">Informática Básica <span class="text-sm text-gray-400 font-normal">(40h)</span></h4>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -393,12 +403,11 @@
         </section>
 
         <!-- SEÇÃO PROJETOS -->
-        <section id="projects" class="py-20 bg-gray-800">
+        <section id="projects" class="py-20 bg-gray-800" aria-labelledby="projects-title">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-white mb-12">Meus Projetos</h2>
+                <h2 id="projects-title" class="text-3xl font-bold text-center text-white mb-12">Meus Projetos</h2>
                 <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
-                    Estou atualmente refazendo meus projetos com tecnologias mais recentes. Em breve, esta seção estará
-                    cheia de exemplos do meu trabalho.
+                    Estou atualmente refazendo meus projetos com tecnologias mais recentes. Em breve, esta seção estará cheia de exemplos do meu trabalho.
                 </p>
                 <p><strong>Status:</strong> Em construção</p>
 
@@ -408,108 +417,89 @@
                     </div>
                 </div>
                 <br><br>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="list" aria-label="Projetos de desenvolvimento">
 
                     <!-- Card de Projeto 1 (Placeholder) -->
-                    <div class="bg-gray-700 rounded-lg overflow-hidden group">
+                    <article class="bg-gray-700 rounded-lg overflow-hidden group" role="listitem">
                         <div class="bg-gray-600 h-56 flex items-center justify-center">
                             <p class="text-gray-400">Imagem do Projeto 1</p>
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">Nome do Projeto 1</h3>
-                            <p class="text-gray-400 mb-4">Breve descrição do projeto, seus objetivos e os desafios
-                                superados durante o desenvolvimento.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span
-                                    class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full">React</span>
-                                <span
-                                    class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full">TailwindCSS</span>
-                                <span
-                                    class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full">Node.js</span>
+                            <p class="text-gray-400 mb-4">Breve descrição do projeto, seus objetivos e os desafios superados durante o desenvolvimento.</p>
+                            <div class="flex flex-wrap gap-2 mb-4" role="list" aria-label="Tecnologias usadas">
+                                <span class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full" role="listitem">React</span>
+                                <span class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full" role="listitem">TailwindCSS</span>
+                                <span class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full" role="listitem">Node.js</span>
                             </div>
                             <div class="flex space-x-4 mt-4">
-                                <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold">Ver no GitHub</a>
-                                <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold">Ver Online</a>
+                                <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold" aria-label="Ver projeto no GitHub">Ver no GitHub</a>
+                                <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold" aria-label="Ver projeto online">Ver Online</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Card de Projeto 2 (Placeholder) -->
-                    <div class="bg-gray-700 rounded-lg overflow-hidden group">
+                    <article class="bg-gray-700 rounded-lg overflow-hidden group" role="listitem">
                         <div class="bg-gray-600 h-56 flex items-center justify-center">
                             <p class="text-gray-400">Imagem do Projeto 2</p>
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">Nome do Projeto 2</h3>
-                            <p class="text-gray-400 mb-4">Breve descrição do projeto, seus objetivos e os desafios
-                                superados durante o desenvolvimento.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span
-                                    class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full">Java</span>
-                                <span
-                                    class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full">SpringBoot</span>
-                                <span
-                                    class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full">PostgreSQL</span>
+                            <p class="text-gray-400 mb-4">Breve descrição do projeto, seus objetivos e os desafios superados durante o desenvolvimento.</p>
+                            <div class="flex flex-wrap gap-2 mb-4" role="list" aria-label="Tecnologias usadas">
+                                <span class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full" role="listitem">Java</span>
+                                <span class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full" role="listitem">SpringBoot</span>
+                                <span class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full" role="listitem">PostgreSQL</span>
                             </div>
                             <div class="flex space-x-4 mt-4">
-                                <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold">Ver no GitHub</a>
-                                <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold">Ver Online</a>
+                                <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold" aria-label="Ver projeto no GitHub">Ver no GitHub</a>
+                                <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold" aria-label="Ver projeto online">Ver Online</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Card de Projeto 3 (Placeholder) -->
-                    <div class="bg-gray-700 rounded-lg overflow-hidden group">
+                    <article class="bg-gray-700 rounded-lg overflow-hidden group" role="listitem">
                         <div class="bg-gray-600 h-56 flex items-center justify-center">
                             <p class="text-gray-400">Imagem do Projeto 3</p>
                         </div>
                         <div class="p-6">
                             <h3 class="text-xl font-bold text-white mb-2">Nome do Projeto 3</h3>
-                            <p class="text-gray-400 mb-4">Breve descrição do projeto, seus objetivos e os desafios
-                                superados durante o desenvolvimento.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span
-                                    class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full">PHP</span>
-                                <span
-                                    class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full">Laravel</span>
+                            <p class="text-gray-400 mb-4">Breve descrição do projeto, seus objetivos e os desafios superados durante o desenvolvimento.</p>
+                            <div class="flex flex-wrap gap-2 mb-4" role="list" aria-label="Tecnologias usadas">
+                                <span class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full" role="listitem">PHP</span>
+                                <span class="bg-sky-500/20 text-sky-400 text-xs font-semibold px-2.5 py-0.5 rounded-full" role="listitem">Laravel</span>
                             </div>
                             <div class="flex space-x-4 mt-4">
-                                <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold">Ver no GitHub</a>
-                                <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold">Ver Online</a>
+                                <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold" aria-label="Ver projeto no GitHub">Ver no GitHub</a>
+                                <a href="#" class="text-sky-400 hover:text-sky-300 font-semibold" aria-label="Ver projeto online">Ver Online</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- SEÇÃO CONTATO -->
-        <section id="contact" class="py-20 bg-gray-900">
+        <section id="contact" class="py-20 bg-gray-900" aria-labelledby="contact-title">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold text-white mb-4">Vamos Conversar!</h2>
-                <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Estou aberto a novas oportunidades e conexões. Se você
-                    tem uma vaga de desenvolvedor júnior ou estágio, ou simplesmente quer trocar uma ideia, entre em
-                    contato!</p>
-                <a href="mailto:joaovitoralexandreribeiro@gmail.com"
-                    class="inline-block bg-sky-500 text-white font-bold text-lg py-3 px-8 rounded-full hover:bg-sky-600 transition-transform duration-300 transform hover:scale-105 mb-12">
+                <h2 id="contact-title" class="text-3xl font-bold text-white mb-4">Vamos Conversar!</h2>
+                <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Estou aberto a novas oportunidades e conexões. Se você tem uma vaga de desenvolvedor júnior ou estágio, ou simplesmente quer trocar uma ideia, entre em contato!</p>
+                <a href="mailto:joaovitoralexandreribeiro@gmail.com" class="inline-block bg-sky-500 text-white font-bold text-lg py-3 px-8 rounded-full hover:bg-sky-600 transition-transform duration-300 transform hover:scale-105 mb-12" aria-label="Enviar email para João Vitor">
                     Mande um Email
                 </a>
-                <div class="flex justify-center space-x-6">
+                <div class="flex justify-center space-x-6" role="list" aria-label="Redes sociais">
                     <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/in/joao-vittorr/" target="_blank" rel="noopener noreferrer"
-                        class="text-gray-400 hover:text-sky-400 transition-colors">
+                    <a href="https://www.linkedin.com/in/joao-vittorr/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-sky-400 transition-colors" aria-label="Perfil do LinkedIn de João Vitor" role="listitem">
                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                         </svg>
                     </a>
                     <!-- GitHub -->
-                    <a href="https://github.com/joao-vittorr" target="_blank" rel="noopener noreferrer"
-                        class="text-gray-400 hover:text-sky-400 transition-colors">
+                    <a href="https://github.com/joao-vittorr" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-sky-400 transition-colors" aria-label="Perfil do GitHub de João Vitor" role="listitem">
                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
-                                clip-rule="evenodd" />
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" />
                         </svg>
                     </a>
                 </div>
@@ -518,7 +508,7 @@
     </main>
 
     <!-- RODAPÉ -->
-    <footer class="bg-gray-900">
+    <footer class="bg-gray-900" role="contentinfo">
         <div class="container mx-auto px-6 py-4 text-center text-gray-500">
             <p>&copy; 2025 João Vitor Alexandre Ribeiro. Todos os direitos reservados.</p>
         </div>
