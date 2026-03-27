@@ -1,15 +1,17 @@
-<svg width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg">
-    <title>Logo Invertida João Vitor</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="150" height="45">
+  <defs>
     <style>
-        .cursor {
-            animation: blink 1.2s infinite step-end;
-        }
-        @keyframes blink {
-            50% { opacity: 0; }
-        }
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&amp;display=swap');
+      .logo-text {
+        font-family: 'Fira Code', monospace;
+        font-size: 38px;
+        font-weight: 700;
+      }
+      .tag { fill: #3b82f6; } /* Azul Vibrante */
+      .name { fill: #0f172a; } /* Azul Corporativo Escuro */
     </style>
-    <!-- Monograma 'JV' (cor escura) -->
-    <text x="0" y="30" font-family="monospace, sans-serif" font-size="32" font-weight="bold" fill="#111827">JV</text>
-    <!-- Cursor piscando (mesma cor de destaque) -->
-    <rect class="cursor" x="48" y="32" width="25" height="4" fill="#38bdf8" />
+  </defs>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" class="logo-text">
+    <tspan class="tag">&lt;</tspan><tspan class="name">JVAR</tspan><tspan class="tag">/&gt;</tspan>
+  </text>
 </svg>
