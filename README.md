@@ -21,6 +21,7 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 - **HTML5:** Para a estrutura semântica do conteúdo.
 - **Tailwind CSS:** Para a estilização rápida e responsiva, utilizando classes utilitárias.
 - **JavaScript:** Para a interatividade do menu mobile.
+- **IA: Copilot e Antigravity** : Para auxiliar na criação do layout e na geração de conteúdo.
 
 ### ⚙️ Como Executar o Projeto
 
