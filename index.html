@@ -128,37 +128,46 @@
         </section>
 
         <!-- SEÇÃO SOBRE MIM (COM FOTO) -->
-        <section id="about" class="py-20 bg-gray-800" aria-labelledby="about-title">
-            <div class="container mx-auto px-6">
-                <h2 id="about-title" class="text-3xl font-bold text-center text-white mb-12">Sobre Mim</h2>
-                <div class="flex flex-col md:flex-row items-center justify-center gap-12 max-w-5xl mx-auto">
+        <section id="about" class="py-24 bg-gray-800 relative border-t border-gray-700/50"
+            aria-labelledby="about-title">
+            <div class="container mx-auto px-6 relative z-10 block">
+                <h2 id="about-title" class="text-4xl font-extrabold text-center text-white mb-16 tracking-tight">Sobre
+                    Mim</h2>
+
+                <article
+                    class="bg-gray-900/40 backdrop-blur-sm border border-gray-700 p-8 md:p-12 rounded-3xl shadow-xl hover:bg-gray-800/60 transition-all duration-300 flex flex-col md:flex-row items-center gap-12 max-w-5xl mx-auto group">
                     <!-- Coluna da Imagem -->
-                    <div class="w-full md:w-1/3 flex-shrink-0">
-                        <figure>
+                    <div class="w-full md:w-1/3 flex-shrink-0 relative">
+                        <figure class="relative">
                             <img src="/asset/foto-sem-fundo.png" alt="Foto de João Vitor A. Ribeiro"
-                                class="rounded-lg w-full h-auto object-cover">
+                                class="w-full h-auto object-cover relative z-10">
                             <figcaption class="sr-only">João Vitor Alexandre Ribeiro, desenvolvedor de software
                             </figcaption>
                         </figure>
                     </div>
                     <!-- Coluna do Texto -->
-                    <div class="w-full md:w-2/3 text-gray-300 leading-relaxed text-center md:text-left">
-                        Minha jornada na tecnologia começou no curso de Análise e Desenvolvimento de Sistemas do
-                        IFRN, onde descobri minha paixão por programação. Desde então, venho aprofundando meus
-                        conhecimentos em tecnologias Front-End, como React, e Back-End com Java e SpringBoot.
+                    <div class="w-full md:w-2/3 text-gray-300 leading-relaxed text-center md:text-left space-y-6">
+                        <p class="text-lg group-hover:text-gray-200 transition-colors duration-300">
+                            Minha jornada na tecnologia começou no curso de <strong
+                                class="text-white font-semibold">Análise e Desenvolvimento de Sistemas</strong> do
+                            IFRN, onde descobri minha paixão por programação. Desde então, venho aprofundando meus
+                            conhecimentos em tecnologias <strong class="text-white font-semibold">Front-End, como
+                                React</strong>, e <strong class="text-white font-semibold">Back-End com Java e
+                                SpringBoot</strong>.
                         </p>
-                        <p class="mb-4">
+                        <p class="text-lg group-hover:text-gray-200 transition-colors duration-300">
                             Minhas experiências anteriores em suporte técnico e no SEBRAE me ensinaram a importância de
                             entender as necessidades do cliente, comunicar-me de forma clara e resolver problemas de
                             forma lógica e eficiente.
                         </p>
-                        <p>
-                            O que me motiva é a capacidade de transformar uma ideia em um produto funcional e útil.
+                        <p class="text-lg group-hover:text-gray-200 transition-colors duration-300">
+                            O que me motiva é a capacidade de <strong class="text-sky-400 font-semibold">transformar uma
+                                ideia em um produto funcional e útil</strong>.
                             Busco um ambiente onde eu possa colaborar, aprender com desenvolvedores experientes e
                             aplicar minhas habilidades para criar valor.
                         </p>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
@@ -177,8 +186,6 @@
                         <div class="flex items-center gap-4 mb-8">
                             <h3 class="text-2xl font-bold text-white">Front-End</h3>
                         </div>
-                        <p class="text-gray-400 mb-8 max-w-sm group-hover:text-gray-200 transition-colors">Aprimorando e
-                            criando interfaces responsivas, dinâmicas, acessíveis e de alta performance para a web.</p>
                         <div class="grid grid-cols-3 gap-y-8 mt-auto">
                             <div
                                 class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
@@ -225,7 +232,7 @@
                         <div class="flex items-center gap-4 mb-8">
                             <h3 class="text-2xl font-bold text-white">Back-End</h3>
                         </div>
-                        <div class="flex flex-wrap justify-between gap-6 mt-auto">
+                        <div class="flex flex-wrap justify-center gap-6 mt-auto">
                             <div
                                 class="flex flex-col items-center gap-3 hover:scale-110 transition-transform duration-300 cursor-pointer group/item">
                                 <i class="devicon-java-plain colored text-5xl"></i>
