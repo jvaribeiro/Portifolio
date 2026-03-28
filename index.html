@@ -53,26 +53,43 @@
         para navegação</a>
 
     <!-- CABEÇALHO E NAVEGAÇÃO -->
-    <header id="header" class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50" role="banner">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="https://jvaribeiro.vercel.app/" class="text-xl font-bold text-white"
+    <header id="header"
+        class="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-5xl bg-white/5 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl transition-all duration-300"
+        role="banner">
+        <div class="px-6 py-3 flex justify-between items-center w-full">
+            <a href="https://jvaribeiro.vercel.app/" class="text-xl font-bold text-white flex-shrink-0"
                 aria-label="Página inicial de João Vitor Ribeiro">
-                <img src="asset/logo-principal.svg" alt="Logo João Vitor Ribeiro" class="h-10">
+                <img src="asset/logo-principal.svg" alt="Logo João Vitor Ribeiro"
+                    class="h-8 md:h-10 hover:scale-110 transition-transform duration-300">
             </a>
             <nav id="navigation" role="navigation" aria-label="Navegação principal">
-                <ul class="hidden md:flex space-x-8">
-                    <li><a href="#home" class="hover:text-sky-400 transition-colors duration-300">Início</a></li>
-                    <li><a href="#about" class="hover:text-sky-400 transition-colors duration-300">Sobre</a></li>
-                    <li><a href="#skills" class="hover:text-sky-400 transition-colors duration-300">Habilidades</a></li>
-                    <li><a href="#experience" class="hover:text-sky-400 transition-colors duration-300">Experiência</a>
+                <ul class="hidden md:flex space-x-2 lg:space-x-4">
+                    <li><a href="#home"
+                            class="text-sm font-semibold text-gray-300 hover:text-sky-400 hover:bg-white/5 px-4 py-2 rounded-full transition-all duration-300">Início</a>
                     </li>
-                    <li><a href="#education" class="hover:text-sky-400 transition-colors duration-300">Formação</a></li>
-                    <li><a href="#projects" class="hover:text-sky-400 transition-colors duration-300">Projetos</a></li>
-                    <li><a href="#contact" class="hover:text-sky-400 transition-colors duration-300">Contato</a></li>
+                    <li><a href="#about"
+                            class="text-sm font-semibold text-gray-300 hover:text-sky-400 hover:bg-white/5 px-4 py-2 rounded-full transition-all duration-300">Sobre</a>
+                    </li>
+                    <li><a href="#skills"
+                            class="text-sm font-semibold text-gray-300 hover:text-sky-400 hover:bg-white/5 px-4 py-2 rounded-full transition-all duration-300">Habilidades</a>
+                    </li>
+                    <li><a href="#experience"
+                            class="text-sm font-semibold text-gray-300 hover:text-sky-400 hover:bg-white/5 px-4 py-2 rounded-full transition-all duration-300">Experiência</a>
+                    </li>
+                    <li><a href="#education"
+                            class="text-sm font-semibold text-gray-300 hover:text-sky-400 hover:bg-white/5 px-4 py-2 rounded-full transition-all duration-300">Formação</a>
+                    </li>
+                    <li><a href="#projects"
+                            class="text-sm font-semibold text-gray-300 hover:text-sky-400 hover:bg-white/5 px-4 py-2 rounded-full transition-all duration-300">Projetos</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="text-sm font-semibold text-gray-300 hover:text-sky-400 hover:bg-white/5 px-4 py-2 rounded-full transition-all duration-300">Contato</a>
+                    </li>
                 </ul>
             </nav>
-            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none" aria-expanded="false"
-                aria-controls="mobile-menu" aria-label="Abrir menu de navegação">
+            <button id="mobile-menu-button"
+                class="md:hidden text-gray-300 hover:text-white hover:bg-white/10 p-2 rounded-full transition-colors focus:outline-none"
+                aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu de navegação">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
@@ -81,15 +98,31 @@
             </button>
         </div>
         <!-- Menu Mobile -->
-        <nav id="mobile-menu" class="hidden md:hidden" role="navigation" aria-label="Menu móvel">
-            <ul>
-                <li><a href="#home" class="block py-2 px-6 text-sm hover:bg-gray-800">Início</a></li>
-                <li><a href="#about" class="block py-2 px-6 text-sm hover:bg-gray-800">Sobre</a></li>
-                <li><a href="#skills" class="block py-2 px-6 text-sm hover:bg-gray-800">Habilidades</a></li>
-                <li><a href="#experience" class="block py-2 px-6 text-sm hover:bg-gray-800">Experiência</a></li>
-                <li><a href="#education" class="block py-2 px-6 text-sm hover:bg-gray-800">Formação</a></li>
-                <li><a href="#projects" class="block py-2 px-6 text-sm hover:bg-gray-800">Projetos</a></li>
-                <li><a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-800">Contato</a></li>
+        <nav id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full mt-2 bg-[#0f172a]/95 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl overflow-hidden"
+            role="navigation" aria-label="Menu móvel">
+            <ul class="flex flex-col py-4 px-2">
+                <li><a href="#home"
+                        class="block py-3 px-6 text-sm font-medium text-gray-300 hover:text-sky-400 hover:bg-white/5 rounded-xl transition-colors">Início</a>
+                </li>
+                <li><a href="#about"
+                        class="block py-3 px-6 text-sm font-medium text-gray-300 hover:text-sky-400 hover:bg-white/5 rounded-xl transition-colors">Sobre</a>
+                </li>
+                <li><a href="#skills"
+                        class="block py-3 px-6 text-sm font-medium text-gray-300 hover:text-sky-400 hover:bg-white/5 rounded-xl transition-colors">Habilidades</a>
+                </li>
+                <li><a href="#experience"
+                        class="block py-3 px-6 text-sm font-medium text-gray-300 hover:text-sky-400 hover:bg-white/5 rounded-xl transition-colors">Experiência</a>
+                </li>
+                <li><a href="#education"
+                        class="block py-3 px-6 text-sm font-medium text-gray-300 hover:text-sky-400 hover:bg-white/5 rounded-xl transition-colors">Formação</a>
+                </li>
+                <li><a href="#projects"
+                        class="block py-3 px-6 text-sm font-medium text-gray-300 hover:text-sky-400 hover:bg-white/5 rounded-xl transition-colors">Projetos</a>
+                </li>
+                <li><a href="#contact"
+                        class="block py-3 px-6 text-sm font-medium text-gray-300 hover:text-sky-400 hover:bg-white/5 rounded-xl transition-colors">Contato</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -97,33 +130,64 @@
     <main id="main-content" role="main">
 
         <!-- SEÇÃO INICIAL  -->
-        <section id="home" class="min-h-screen flex items-center" aria-labelledby="hero-title">
-            <div class="container mx-auto px-6 text-center">
-                <h1 id="hero-title" class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
-                    Olá, eu sou <span class="highlight">João Vitor</span>.
-                </h1>
-                <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto">
-                    Desenvolvedor de Software.
-                </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="#projects"
-                        class="bg-sky-500 text-white font-bold py-3 px-8 rounded-full hover:bg-sky-600 transition-transform duration-300 transform hover:scale-105 w-full sm:w-auto"
-                        aria-label="Ver projetos de João Vitor">
-                        Ver Projetos
-                    </a>
-                    <a href="asset/JOAO-VITOR-ALEXANDRE-RIBEIRO-CURRICULO.pdf"
-                        download="JOAO-VITOR-ALEXANDRE-RIBEIRO-CURRICULO.pdf"
-                        class="bg-gray-700 text-white font-bold py-3 px-8 rounded-full hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105 flex items-center justify-center gap-2 w-full sm:w-auto"
-                        aria-label="Baixar currículo de João Vitor">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"
-                            aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        Baixar CV
-                    </a>
-                </div>
+        <section id="home"
+            class="min-h-screen flex items-center justify-center pt-28 pb-12 relative bg-[#0f172a] border-b border-gray-800/50 overflow-hidden"
+            aria-labelledby="hero-title">
+            <!-- Blobs de fundo para o efeito Glassmorphism -->
+            <div
+                class="absolute top-1/4 left-1/4 w-96 h-96 bg-sky-500/20 rounded-full mix-blend-screen filter blur-[100px] opacity-60 animate-skill-blob pointer-events-none">
+            </div>
+            <div
+                class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full mix-blend-screen filter blur-[100px] opacity-60 animate-skill-blob-reverse pointer-events-none">
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10 w-full max-w-5xl">
+                <!-- Card estilo Bento Grid/Glassmorphism -->
+                <article
+                    class="bg-white/5 backdrop-blur-xl border border-white/10 p-10 md:p-16 rounded-[2.5rem] shadow-2xl flex flex-col items-center justify-center text-center hover:bg-white/10 transition-all duration-500 group relative overflow-hidden">
+                    <!-- Brilho no hover -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-sky-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                    </div>
+
+                    <h1 id="hero-title"
+                        class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight relative z-10">
+                        Olá, eu sou <br class="md:hidden" />
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500 group-hover:from-sky-300 group-hover:to-blue-400 transition-all duration-300">João
+                            Vitor</span>.
+                    </h1>
+
+                    <p class="text-xl md:text-2xl text-gray-300 font-medium mb-10 max-w-2xl mx-auto relative z-10">
+                        Desenvolvedor de Software Especialista em Criar Experiências Digitais.
+                    </p>
+
+                    <div
+                        class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 w-full relative z-10">
+                        <a href="#projects"
+                            class="bg-sky-500 text-white font-bold py-4 px-10 rounded-full hover:bg-sky-400 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 w-full sm:w-auto shadow-[0_0_20px_rgba(56,189,248,0.4)] hover:shadow-[0_0_30px_rgba(56,189,248,0.6)] flex items-center justify-center gap-2"
+                            aria-label="Ver projetos de João Vitor">
+                            Ver Projetos
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                        <a href="asset/JOAO-VITOR-ALEXANDRE-RIBEIRO-CURRICULO.pdf"
+                            download="JOAO-VITOR-ALEXANDRE-RIBEIRO-CURRICULO.pdf"
+                            class="bg-white/5 text-white border border-white/10 font-bold py-4 px-10 rounded-full hover:bg-white/10 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 flex items-center justify-center gap-3 w-full sm:w-auto shadow-lg backdrop-blur-md"
+                            aria-label="Baixar currículo de João Vitor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            Baixar CV
+                        </a>
+                    </div>
+                </article>
             </div>
         </section>
 
