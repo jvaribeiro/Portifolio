@@ -2,7 +2,8 @@
 
 Bem-vindo ao repositório do meu portfólio pessoal. Este é um site de página única (single-page) desenvolvido para apresentar minhas habilidades, experiências e projetos na área de desenvolvimento de software.
 
-Pré-visualização do Site: ![image](https://github.com/user-attachments/assets/1ec905d9-cfe9-4cbf-990d-6493be34090a)
+Pré-visualização do Site: <img width="2544" height="1266" alt="image" src="https://github.com/user-attachments/assets/3ca05e9a-05d1-40c4-88c3-621fe1a99138" />
+
 
 ### ✨ Funcionalidades
 
