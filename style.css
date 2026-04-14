@@ -4,40 +4,7 @@ body {
   background-color: #111827; /* bg-gray-900 */
   color: #d1d5db; /* text-gray-300 */
 }
-/* Cor de destaque */
-.highlight {
-  color: #38bdf8; /* text-sky-400 */
-}
 
-/* Reutilize o .progress-container novamente */
-.progress-container {
-  width: 100%;
-  background-color: #e0e0e0;
-  border-radius: 25px;
-  overflow: hidden;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-}
-
-.progress-bar-gradient {
-  height: 25px;
-  
-  /* Gradiente de cores vibrantes */
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%; /* Gradiente muito maior que a barra */
-
-  /* Animação do gradiente */
-  animation: gradient-animation 15s ease infinite;
-
-  /* Estilos do texto e bordas */
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 14px;
-  border-radius: 25px;
-  transition: width 1s ease;
-}
 
 /* Keyframes para a animação do gradiente */
 @keyframes gradient-animation {
